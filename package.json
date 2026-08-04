@@ -1,0 +1,20 @@
+{
+  "name": "helix-benchmark-react-node-security",
+  "version": "1.0.0",
+  "description": "Deliberately vulnerable React + Node benchmark for autonomous security fixes.",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "test": "npm run test -w backend && npm run build -w frontend",
+    "start": "npm run start -w backend",
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "license": "MIT"
+}
