@@ -17,5 +17,8 @@ npm run dev
 npm test
 ```
 
+## Security hardening
+See PR #2 for applied fixes: Helmet, express-validator, CSRF protection, rate-limiting, DOMPurify, CORS restriction, IDOR prevention, password hashing, and privilege escalation prevention.
+
 ## License
 MIT
