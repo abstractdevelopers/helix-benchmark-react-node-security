@@ -7,7 +7,7 @@ export function NoteCard({ note }) {
   return (
     <div className="note-card" data-testid="note-card">
       <h3>{note.title}</h3>
-      <div dangerouslySetInnerHTML={{ __html: note.content }} />
+      <div>{note.content}</div>
     </div>
   );
 }
